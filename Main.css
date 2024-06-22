@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap&family=Roboto:wght@400;700&display=swap');
 
 html, body {
     margin: 0;
@@ -21,7 +21,7 @@ html, body {
 
 .left {
     background: black;
-    width: 50%;
+    width: 30%;
     height: 100%;
     position: relative;
     display: flex;
@@ -53,7 +53,7 @@ html, body {
 
 .right {
     background: white;
-    width: 50%;
+    width: 70%;
     height: 100%;
     overflow-y: scroll; /* Enable vertical scrolling */
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -82,3 +82,21 @@ html, body {
     font-family: 'Indie Flower', cursive;
     font-size: 18px;
 }
+
+.handwriting_h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+/* Style for the linked image */
+.logo {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    filter: grayscale(100%) contrast(200%); /* Apply grayscale and enhance contrast */
+}
+
+/* Hover effect for the linked image */
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
