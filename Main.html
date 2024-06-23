@@ -9,12 +9,14 @@
 <body>
 <div class="container">
     <div class="left">
-        <a href="Main.html" class="home-button">ZIHAO ZENG</a>
-        <button class="scroll-button" onclick="scrollToContent('section1')">Personal Summary</button>
-        <button class="scroll-button" onclick="scrollToContent('section2')">Education History</button>
-        <button class="scroll-button" onclick="scrollToContent('section3')">Current Transcripts</button>
-        <button class="scroll-button" onclick="scrollToContent('section4')">Important Coursework</button>
-        <button class="scroll-button" onclick="scrollToContent('section5')">Personal Projects</button>
+        <div class="left-menu">
+            <a href="Main.html" class="home-button">ZIHAO ZENG</a>
+            <button class="scroll-button" onclick="scrollToContent('section1')">Personal Summary</button>
+            <button class="scroll-button" onclick="scrollToContent('section2')">Education History</button>
+            <button class="scroll-button" onclick="scrollToContent('section3')">Current Transcripts</button>
+            <button class="scroll-button" onclick="scrollToContent('section4')">Important Coursework</button>
+            <button class="scroll-button" onclick="scrollToContent('section5')">Personal Projects</button>
+        </div>
     </div>
     <div class="right" id="right-container">
         <div class="content">
@@ -129,57 +131,149 @@
                         <th>Score</th>
                     </tr>
                     <tr>
-                        <td>Combinatorial Design</td>
+                        <td class="tooltip">Combinatorial Design
+                            <span class="tooltiptext">
+                                1. Learned about the concept and application of combinatorial circuits.
+                                <br>2. Implemented a Verilog module to convert a 4-bit binary input to a 15-bit segment pattern.
+                                <br>3. Simulated Verilog code to verify correct functionality.
+                                <br>4. Connected decoder design to an experimental board for testing.
+                                <br>5. Synthesized design and downloaded it onto a Xilinx gate array.
+                            </span>
+                        </td>
                         <td>COMP12111 Fundamentals of Computer Engineering</td>
                         <td>77/100</td>
                     </tr>
                     <tr>
-                        <td>Sequential Design</td>
+                        <td class="tooltip">Sequential Design
+                            <span class="tooltiptext">
+                                1. Learned about finite state machines (FSM) and their design.
+                                <br>2. Implemented a Verilog module for a sequential system controlling a traffic light sequence.
+                                <br>3. Simulated and tested the FSM to ensure proper operation.
+                                <br>4. Interfaced the FSM design with an experimental board to control traffic and pedestrian lights.
+                                <br>5. Synthesized and downloaded the FSM design onto a Xilinx gate array for real-world testing.
+                            </span>
+                        </td>
                         <td>COMP12111 Fundamentals of Computer Engineering</td>
                         <td>90/100</td>
                     </tr>
                     <tr>
-                        <td>Statistical Reasoning</td>
+                        <td class="tooltip">Statistical Reasoning
+                            <span class="tooltiptext">
+                                1. Learned about hypothesis testing and statistical analysis.
+                                <br>2. Processed and analyzed the census11sample.csv data.
+                                <br>3. Divided the data into exploration and testing sets to avoid bias.
+                                <br>4. Explored the data using descriptive statistics, histograms, and scatterplots.
+                                <br>5. Formulated hypotheses based on data exploration.
+                                <br>6. Applied appropriate statistical tests to validate the hypotheses.
+                                <br>7. Utilized Python libraries such as pandas, numpy, and scipy for data manipulation and statistical computations.
+                                <br>8. Implemented Monte Carlo and Bootstrap sampling methods for resampling and estimation.
+                            </span>
+                        </td>
                         <td>COMP13212 Data Science</td>
                         <td>20/20</td>
                     </tr>
                     <tr>
-                        <td>Spam filtering using Naive Bayes Classification</td>
+                        <td class="tooltip">Spam filtering using Naive Bayes Classification
+                            <span class="tooltiptext">
+                                1. Learned about Naïve Bayes and its application in spam filtering.
+                                <br>2. Processed and analyzed a dataset containing messages classified as ham or spam.
+                                <br>3. Implemented a Naïve Bayes spam filter without using scikit-learn or similar libraries.
+                                <br>4. Calculated prior probabilities and conditional probabilities for spam and ham messages.
+                                <br>5. Avoided floating point underflow by using logarithms to handle small probability values.
+                                <br>6. Tested the model with a test set and implemented counters to evaluate its performance.
+                                <br>7. Calculated the accuracy of the model based on test results.
+                                <br>8. Provided suggestions for improving the accuracy of the spam filter model.
+                            </span>
+                        </td>
                         <td>COMP13212 Data Science</td>
                         <td>19/20</td>
                     </tr>
                     <tr>
-                        <td>Introduction to Bennett</td>
+                        <td class="tooltip">Introduction to Bennett
+                            <span class="tooltiptext">
+                                1. Learned to use Bennett for ARM program development and debugging.
+                                <br>2. Assembled, ran, and modified a simple ARM program.
+                                <br>3. Used Bennett’s debugging facilities to step through instructions.
+                                <br>4. Answered questions based on observed program behavior.
+                            </span>
+                        </td>
                         <td>COMP15111 Fundamentals of Computer Architecture</td>
                         <td>90/100</td>
                     </tr>
                     <tr>
-                        <td>Control Structures</td>
+                        <td class="tooltip">Control Structures
+                            <span class="tooltiptext">
+                                1. Practiced converting Python statements into ARM assembly code.
+                                <br>2. Encoded Python assignment, If, and While statements using ARM instructions.
+                                <br>3. Used Bennett to run and debug the ARM programs.
+                                <br>4. Improved ARM code by optimizing control structures.
+                            </span>
+                        </td>
                         <td>COMP15111 Fundamentals of Computer Architecture</td>
                         <td>100/100</td>
                     </tr>
                     <tr>
-                        <td>Addressing</td>
+                        <td class="tooltip">Addressing
+                            <span class="tooltiptext">
+                                1. Practiced using addresses with ARM assembly code.
+                                <br>2. Operated with arrays of characters in ARM programs.
+                                <br>3. Implemented string output using ARM instructions.
+                                <br>4. Developed methods for string copying and concatenation in ARM.
+                                <br>5. Compared strings alphabetically using ARM assembly.
+                            </span>
+                        </td>
                         <td>COMP15111 Fundamentals of Computer Architecture</td>
                         <td>100/100</td>
                     </tr>
                     <tr>
-                        <td>Methods and (more) Control Structures</td>
+                        <td class="tooltip">Methods and (more) Control Structures
+                            <span class="tooltiptext">
+                                1. Practiced converting Python control structures into ARM assembly code.
+                                <br>2. Used stack operations for passing parameters and local variables.
+                                <br>3. Optimized parameter passing by using registers.
+                                <br>4. Created and called nested methods to improve code organization.
+                                <br>5. Implemented conditional Boolean operations (and, or) in ARM code.
+                            </span>
+                        </td>
                         <td>COMP15111 Fundamentals of Computer Architecture</td>
                         <td>100/100</td>
                     </tr>
                     <tr>
-                        <td>Caching</td>
+                        <td class="tooltip">Caching
+                            <span class="tooltiptext">
+                                暂时无法访问，日后再补充
+                            </span>
+                        </td>
                         <td>COMP15212 Operating Systems</td>
                         <td>223/257</td>
                     </tr>
                     <tr>
-                        <td>Basic Python Functionality</td>
+                        <td class="tooltip">Basic Python Functionality
+                            <span class="tooltiptext">
+                                1. Explored how to read text files into Python using built-in functions.
+                                <br>2. Applied basic Python functionalities to manipulate and analyze data.
+                                <br>3. Used method-based programming to produce structured code.
+                                <br>4. Completed tasks related to file input, data metrics, and data manipulation.
+                            </span>
+                        </td>
                         <td>COMP16312 Introduction to Programming 1</td>
                         <td>91.67/100</td>
                     </tr>
                     <tr>
-                        <td>Selfish (Space Edition)</td>
+                        <td class="tooltip">Selfish (Space Edition)
+                            <span class="tooltiptext">
+                                1. Implemented the card game Selfish (Space Edition) in Java.
+                                <br>2. Followed UML class diagrams to create classes, methods, and attributes accurately.
+                                <br>3. Conducted extensive automated testing using 599 provided JUnit tests to ensure functionality, including structural, functional, and Javadoc tests.
+                                <br>4. Developed methods to manage game state, including player actions, card interactions, and game logic.
+                                <br>5. Ensured proper handling of game rules, including player turns, resource management, and win/loss conditions.
+                                <br>6. Optimized code for efficiency and readability, making use of inheritance and polymorphism where appropriate.
+                                <br>7. Documented code using Javadoc for all public/protected classes and methods to ensure maintainability.
+                                <br>8. Managed class packaging and dependencies to ensure smooth compilation and execution of the project.
+                                <br>9. Followed a methodical approach to debugging and validating the game mechanics through iterative testing and refinement.
+                                <br>10. Developed JavaFX GUI versions of the game for enhanced interactivity and user experience.
+                            </span>
+                        </td>
                         <td>COMP16412 Introduction to Programming 2</td>
                         <td>94/100</td>
                     </tr>
@@ -192,77 +286,107 @@
                         <th>Score</th>
                     </tr>
                     <tr>
-                        <td>Database Design</td>
+                        <td class="tooltip">Database Design
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP23111 Database Systems</td>
                         <td>58.82/100</td>
                     </tr>
                     <tr>
-                        <td>Database Implementation</td>
+                        <td class="tooltip">Database Implementation
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP23111 Database Systems</td>
                         <td>64.11/100</td>
                     </tr>
                     <tr>
-                        <td>Reversi</td>
+                        <td class="tooltip">Reversi
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP24011 Introduction to AI</td>
                         <td>15/20</td>
                     </tr>
                     <tr>
-                        <td>Constraint Satisfaction</td>
+                        <td class="tooltip">Constraint Satisfaction
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP24011 Introduction to AI</td>
                         <td>18/20</td>
                     </tr>
                     <tr>
-                        <td>Features for Estimating Autonomous Vehicle Poses</td>
+                        <td class="tooltip">Features for Estimating Autonomous Vehicle Poses
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP24011 Introduction to AI</td>
                         <td>16/20</td>
                     </tr>
                     <tr>
-                        <td>BM25 for Retrieval-Augmented Question Answering</td>
+                        <td class="tooltip">BM25 for Retrieval-Augmented Question Answering
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP24011 Introduction to AI</td>
                         <td>17/20</td>
                     </tr>
                     <tr>
-                        <td>Air Quality Analysis</td>
+                        <td class="tooltip">Air Quality Analysis
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP24112 Machine Learning</td>
                         <td>26/30</td>
                     </tr>
                     <tr>
-                        <td>Matrix Processing Library in C</td>
+                        <td CLASS="tooltip">Matrix Processing Library in C
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP26020 Programming Languages and Paradigms</td>
                         <td>8.13/10</td>
                     </tr>
                     <tr>
-                        <td>Functional Programming in Haskell</td>
+                        <td class="tooltip">Functional Programming in Haskell
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP26020 Programming Languages and Paradigms</td>
                         <td>7.6/10</td>
                     </tr>
                     <tr>
-                        <td>Register Allocation using Graph Colouring</td>
+                        <td class="tooltip">Register Allocation using Graph Colouring
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP26020 Programming Languages and Paradigms</td>
                         <td>10/10</td>
                     </tr>
                     <tr>
-                        <td>Solidity</td>
+                        <td class="tooltip">Solidity
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP26020 Programming Languages and Paradigms</td>
                         <td>9/10</td>
                     </tr>
                     <tr>
-                        <td>Complexity of Recursive Programs</td>
+                        <td class="tooltip">Complexity of Recursive Programs
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP26120 Algorithms and Data Structures</td>
                         <td>9/10</td>
                     </tr>
                     <tr>
-                        <td>The 0/1 Knapsack Problem</td>
+                        <td class="tooltip">The 0/1 Knapsack Problem
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP26120 Algorithms and Data Structures</td>
                         <td>25.74/30</td>
                     </tr>
                     <tr>
-                        <td>Solar System</td>
+                        <td class="tooltip">Solar System
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP27112 Introduction to Visual Computing</td>
                         <td>19/20</td>
                     </tr>
                     <tr>
-                        <td>Image Processing</td>
+                        <td class="tooltip">Image Processing
+                            <span class="tooltiptext"> </span>
+                        </td>
                         <td>COMP27112 Introduction to Visual Computing</td>
                         <td>19/20</td>
                     </tr>
