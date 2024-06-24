@@ -10,15 +10,16 @@
 <div class="container">
     <div class="left">
         <div class="left-menu">
-            <a href="Main.html" class="home-button">ZIHAO ZENG</a>
-            <button class="scroll-button" onclick="scrollToContent('section1')">Personal Summary</button>
-            <button class="scroll-button" onclick="scrollToContent('section2')">Education History</button>
-            <button class="scroll-button" onclick="scrollToContent('section3')">Current Transcripts</button>
-            <button class="scroll-button" onclick="scrollToContent('section4')">Important Coursework</button>
+            <a href="Main.html" class="home-button" data-cn="曾子昊">ZIHAO ZENG</a>
+            <button class="scroll-button" onclick="scrollToContent('section1')" data-cn="个人简介">Personal Summary</button>
+            <button class="scroll-button" onclick="scrollToContent('section2')" data-cn="教育背景">Education History</button>
+            <button class="scroll-button" onclick="scrollToContent('section3')" data-cn="目前成绩">Current Transcripts</button>
+            <button class="scroll-button" onclick="scrollToContent('section4')" data-cn="重要课业">Important Coursework</button>
+            <button id="language-toggle" class="scroll-button" onclick="toggleLanguage()" data-cn="English UK">简体中文</button>
         </div>
 
         <div class="contact-links">
-            <a href="https://github.com/zihaozeng0021" target="_blank" class="contact-link">GitHub</a>
+            <a href="https://github.com/zihaozeng0021" target="_blank" class="contact-link" data-cn="GitHub">GitHub</a>
             <a href="https://www.linkedin.com/in/zihao-zeng-1044a5292/" target="_blank" class="contact-link">LinkedIn</a>
             <a href="mailto:zihaozeng0021@gmail.com" class="contact-link">Email</a>
         </div>
@@ -26,42 +27,55 @@
     <div class="right" id="right-container">
         <div class="content">
             <div id="section1">
-                <h1 class="handwriting_h1">Personal Summary</h1>
-                <p class="handwriting"> Hi!
+                <h1 class="handwriting_h1" data-cn="个人简介">Personal Summary</h1>
+                <p class="handwriting"
+                   data-cn="你好！
+                   <br>我叫曾子昊❤️。
+                   <br>时而自闭，时而智障🤓。
+                   <br>目前是曼彻斯特大学计算机科学专业的大三学生🎓。
+                   <br>我是一个极简主义者，追求生活和内心的简单和纯净😉。">
+                    Hi!
                     <br>My name is Zihao Zeng❤️.
                     <br>A mix of socially awkward and adorably clueless🤓.
                     <br>Currently, I'm a third-year Computer Science student at the University of Manchester🎓.
-                    <br>I'm a minimalist at heart, striving for simplicity and purity both in my life and my inner self😉.</p>
+                    <br>I'm a minimalist at heart, striving for simplicity and purity both in my life and my inner self😉.
+                </p>
             </div>
             <div id="section2">
-                <h2 class="handwriting_h1">Education History</h2>
+                <h2 class="handwriting_h1" data-cn="教育背景">Education History</h2>
                 <a href="https://www.intostudy.com/en/universities/into-manchester" target="_blank">
                     <img src="image/into_manchester_logo.png" alt="INTO Manchester" class="logo" style="width: 200px">
                 </a>
-                <p class="handwriting">
+                <p class="handwriting" data-cn="INTO曼彻斯特，预科（相当于A-levels）
+                <br>2022年1月 - 2022年7月
+                <br>英格兰曼彻斯特，英国">
                     INTO Manchester, Foundation Year (equivalent to A-levels)
-                <br>Jan 2022 - Jul 2022
-                <br>Manchester, England, United Kingdom</p>
+                    <br>Jan 2022 - Jul 2022
+                    <br>Manchester, England, United Kingdom
+                </p>
 
                 <br>
                 <a href="https://www.cs.manchester.ac.uk/" target="_blank">
                     <img src="image/UOM_logo.jpg" alt="University of Manchester" class="logo" style="width: 200px">
                 </a>
-                <p class="handwriting">
+                <p class="handwriting" data-cn="曼彻斯特大学，计算机科学荣誉学士
+                <br>2022年9月 - 现在
+                <br>英格兰曼彻斯特，英国">
                     University of Manchester, BSc(Hons) Computer Science
-                <br>Sep 2022 - Present
-                <br>Manchester, England, United Kingdom</p>
+                    <br>Sep 2022 - Present
+                    <br>Manchester, England, United Kingdom
+                </p>
             </div>
 
 
 
             <div id="section3">
-                <h2 class="handwriting_h1">Current Transcripts</h2>
-                <p class="handwriting_h3">All Foundation Year Modules</p>
+                <h2 class="handwriting_h1" data-cn="目前成绩">Current Transcripts</h2>
+                <p class="handwriting_h3" data-cn="预科所有模块">All Foundation Year Modules</p>
                 <table class="handwriting">
                     <tr>
-                        <th>Modules</th>
-                        <th>Grade</th>
+                        <th data-cn="模块">Modules</th>
+                        <th data-cn="成绩">Grade</th>
                     </tr>
                     <tr>
                         <td>EAP</td>
@@ -80,19 +94,19 @@
                         <td>A*</td>
                     </tr>
                 </table>
-                <p class="handwriting">(A* is the highest grade achievable)</p>
+                <p class="handwriting" data-cn="（A*是最高评级）">(A* is the highest grade achievable)</p>
 
                 <br>
                 <hr>
 
-                <p class="handwriting_h3">Distinguished Undergraduate Modules</p>
+                <p class="handwriting_h3" data-cn="显著的本科模块">Distinguished Undergraduate Modules</p>
 
                 <table class="handwriting">
                     <tr>
-                        <th>Modules</th>
-                        <th>Grade</th>
-                        <th>Year</th>
-                        <th>Position</th>
+                        <th data-cn="模块">Modules</th>
+                        <th data-cn="成绩">Grade</th>
+                        <th data-cn="学年">Year</th>
+                        <th data-cn="位置">Position</th>
                     </tr>
                     <tr>
                         <td>COMP10120 First Year Team Project</td>
@@ -128,12 +142,12 @@
 
             </div>
             <div id="section4">
-                <h2 class="handwriting_h1">Important Coursework</h2>
+                <h2 class="handwriting_h1" data-cn="重要课业">Important Coursework</h2>
                 <table class="handwriting">
                     <tr>
-                        <th>Coursework</th>
-                        <th>Module</th>
-                        <th>Score</th>
+                        <th data-cn="课业">Coursework</th>
+                        <th data-cn="模块">Module</th>
+                        <th data-cn="分数">Score</th>
                     </tr>
                     <tr>
                         <td class="tooltip">Combinatorial Design
@@ -525,8 +539,8 @@
                         <td>19/20</td>
                     </tr>
                 </table>
-                <p class="handwriting">(Hover over the coursework name for more information)</p>
-                <p class="handwriting">(The coursework highlighted in gold are the ones I truly enjoyed developing and am most proud of)</p>
+                <p class="handwriting" data-cn="（将光标悬停在课业名称上获取更多信息）">(Hover over the coursework name for more information)</p>
+                <p class="handwriting" data-cn="（那些标记为金色的课程作业是我在开发过程中真正享受并且最为自豪的。）">(The coursework highlighted in gold are the ones I truly enjoyed developing and am most proud of)</p>
             </div>
         </div>
     </div>
@@ -535,6 +549,24 @@
     function scrollToContent(sectionId) {
         document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
+
+    function toggleLanguage() {
+        var elements = document.querySelectorAll('[data-cn]');
+        var toggleButton = document.getElementById('language-toggle');
+        var isEnglish = toggleButton.innerText === '简体中文';
+
+        elements.forEach(function(element) {
+            if (isEnglish) {
+                element.setAttribute('data-original', element.innerHTML);
+                element.innerHTML = element.getAttribute('data-cn');
+            } else {
+                element.innerHTML = element.getAttribute('data-original');
+            }
+        });
+
+        toggleButton.innerText = isEnglish ? 'English UK' : '简体中文';
+    }
+
 </script>
 </body>
 </html>
