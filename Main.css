@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap&family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden; /* Prevent container scrolling */
+}
+
+.left {
+    background: #070000;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    overflow: hidden; /* Ensure left side doesn't scroll */
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align to the top vertically */
+    width: 100%;
+}
+.contact-links {
+    margin-top: auto; /* Push to the bottom */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px; /* Padding at the bottom */
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px; /* Space between links */
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.home-button {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.scroll-button {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.right {
+    background: #fafdfa;
+    width: 70%;
+    height: 100%;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Hide scrollbar */
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar */
+.right {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content div {
+    margin-bottom: 100px; /* Add some space between sections */
+}
+
+.handwriting {
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+}
+
+.handwriting_h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+.handwriting_h3 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+table.handwriting th, table.handwriting td {
+    text-align: left;
+    padding: 20px;
+}
+
+/* Style for the linked image */
+.logo {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    filter: grayscale(100%) contrast(200%); /* Apply grayscale and enhance contrast */
+}
+
+/* Hover effect for the linked image */
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 40vw;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the text */
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left:  -45%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Highlighted row */
+.highlight {
+    background-color: #ffd700; /* Gold background */
+}
+
+
