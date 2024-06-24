@@ -20,7 +20,10 @@ html, body {
 }
 
 .left {
-    background: #070000;
+    background-image: url('image/black_background.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
     width: 30%;
     height: 100%;
     position: relative;
@@ -30,6 +33,7 @@ html, body {
     padding: 20px;
     overflow: hidden; /* Ensure left side doesn't scroll */
 }
+
 
 .left-menu {
     display: flex;
@@ -78,12 +82,23 @@ html, body {
 }
 
 .right {
-    background: #fafdfa;
     width: 70%;
     height: 100%;
     overflow-y: scroll; /* Enable vertical scrolling */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative; /* Ensure positioning context */
 }
+
+.background-wrapper {
+    background-image: url('image/white_background.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    min-height: 100%; /* Ensure it covers the entire height of the content */
+    width: 100%;
+    height: auto;
+}
+
 
 /* Hide scrollbar */
 .right::-webkit-scrollbar {
