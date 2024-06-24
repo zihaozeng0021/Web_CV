@@ -36,7 +36,25 @@ html, body {
     flex-direction: column;
     align-items: center; /* Center horizontally */
     justify-content: flex-start; /* Align to the top vertically */
-    padding-top: 20px;
+    width: 100%;
+}
+.contact-links {
+    margin-top: auto; /* Push to the bottom */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px; /* Padding at the bottom */
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px; /* Space between links */
+}
+
+.contact-link:hover {
+    text-decoration: underline;
 }
 
 .home-button {
